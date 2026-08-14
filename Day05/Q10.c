@@ -17,23 +17,16 @@ Output 2:
 #include<stdio.h>
 int main() {
 
-    int seconds, hours, minutes;
-    printf("time in seconds :");
-    scanf("%d", &seconds);
+    int total_seconds, hours, minutes,seconds, remaining_seconds;
+    printf("total_seconds:");
+    scanf("%d", &total_seconds);
 
-    hours = seconds/3600;
-    seconds = seconds/60;
-    
-    
+    hours = total_seconds / 3600;
+    remaining_seconds = total_seconds % 3600;
+    minutes = remaining_seconds / 60;
+    seconds = remaining_seconds % 60;
 
-
-
-
-
-
-
-
-
+    printf("%d:%d:%d\n", hours, minutes, seconds);
 
     return 0;
 }
