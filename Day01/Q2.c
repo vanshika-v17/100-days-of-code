@@ -14,8 +14,13 @@ int main () {
     printf("Sum = %d\n", a+b);
     printf("Diff = %d\n", a-b);
     printf("Product = %d\n", a*b);
-    printf("Quotient = %d\n", a/b);
 
+    if (b != 0) {
+        printf("Quotient = %d\n", a/b);
+    }
+    else {
+        printf("Quotient = Undefined\n");
+    }
 
-    return 0;
+         return 0;
 }
