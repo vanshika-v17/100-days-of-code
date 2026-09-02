@@ -16,6 +16,7 @@ Approximate sum: 2.22
 
 #include<stdio.h>
 int main() {
+
     int n, i;
     float sum = 0;
 
