@@ -16,4 +16,42 @@ Input 2:
 Output 2:
 -1
 
+
 */
+
+#include <stdio.h>
+
+int main()
+{
+    int n, a[100], x, low, high, mid;
+
+    scanf("%d", &n);
+
+    for(int i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    scanf("%d", &x);
+
+    low = 0;
+    high = n - 1;
+
+    while(low <= high)
+    {
+        mid = (low + high) / 2;
+
+        if(a[mid] == x)
+        {
+            printf("Found at index %d", mid);
+            return 0;
+        }
+
+        if(a[mid] < x)
+            low = mid + 1;
+        else
+            high = mid - 1;
+    }
+
+    printf("-1");
+
+    return 0;
+}
