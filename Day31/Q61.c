@@ -19,21 +19,5 @@ Output 2:
 */
 
 
-        if(arr[i] == key)
-        {
-            index = i;
-            break;
-        }
-    }
-
-    if(index != -1)
-    {
-        printf("Found at index %d", index);
-    }
-    else
-    {
-        printf("-1");
-    }
-
-    return 0;
-}
+        
+       
